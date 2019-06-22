@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2019_06_22_160708) do
 
   create_table "albums", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "name"
-    t.string "gendre"
+    t.string "genre"
     t.bigint "artist_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
